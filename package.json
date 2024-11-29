@@ -2,7 +2,7 @@
   "name": "surgeon-website",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://mpody11.github.io/modoctor/",
+"homepage": "https://mpody11.github.io/modoctor/",
   "type": "module",
   "scripts": {
     "predeploy": "npm run build",
