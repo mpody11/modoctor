@@ -36,7 +36,7 @@ export default function About() {
               transition={{ duration: 0.5 }}
             >
               <img
-                src="doctor.webp" 
+                src="/modoctor/assets/doctor.webp" 
                 alt="د. محمد أحمد"
                 className="rounded-lg shadow-lg"
               />

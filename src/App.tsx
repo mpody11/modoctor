@@ -13,17 +13,22 @@ import HomeTestimonials from './components/HomeTestimonials';
 
 function App() {
   return (
-    <Router>
+    <Router basename="/modoctor"> {/* أضف خاصية basename */}
       <div className="min-h-screen bg-gray-50" dir="rtl">
         <Navbar />
         <Routes>
-          <Route path="/" element={
-            <>
-              <Hero />
-              <HomeFeatures />
-              <HomeTestimonials />
-            </>
-          } />
+          {/* الصفحة الرئيسية */}
+          <Route
+            path="/"
+            element={
+              <>
+                <Hero />
+                <HomeFeatures />
+                <HomeTestimonials />
+              </>
+            }
+          />
+          {/* باقي الصفحات */}
           <Route path="/services" element={<Services />} />
           <Route path="/about" element={<About />} />
           <Route path="/blog" element={<Blog />} />
